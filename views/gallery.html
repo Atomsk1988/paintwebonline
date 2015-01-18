@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>PaintWeb simple demo</title>
+    <link rel="author" type="text/html" href="http://www.robodesign.ro" 
+    title="Marius and Mihai Şucan, ROBO Design">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- $URL: http://code.google.com/p/paintweb $
+         $Date: 2010-06-26 22:58:27 +0300 $ -->
+  </head>
+  <body>
+   <h1><%= pagename %></h1>
+	<ul>
+		<% for(var i=0; i<gallery.length; i++) { %>
+			<li><a href="./canvas/?paint=<%= gallery[i] %>">Item</a></li>
+		<% } %>
+	</ul>
+  </body>
+  <!-- vim:set spell spl=en fo=tcroqwanl1 tw=80 ts=2 sw=2 sts=2 sta et ai cin fenc=utf-8 ff=unix: -->
+</html>
